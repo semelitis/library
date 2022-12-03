@@ -1,0 +1,138 @@
+/* reset */
+/* only for web pages format not responsibe */
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+:root{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(blueviolet, rgb(205, 150, 211));
+    font-family: 'Roboto','Helvetica';
+    font-size: 100%;
+    color: white;
+}
+
+#header{
+    height: 15vh;
+    max-width:100%;
+    background-color:rgb(208, 145, 225);
+    color:white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+   max-width: 100%;
+   height: 80vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.aside_1,.aside_2{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    width: 50%;
+    height: 75vh;
+}
+.aside_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+h2{
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+#book_form{
+    background-color:rgb(92, 9, 103,70%);
+    color: aliceblue;
+    border-radius: 2px;
+
+    width: 30vw;
+    height: 70vh;
+    padding-top: px;
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-evenly;
+}
+#book_form.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#book_form  label{
+    text-align: justify;
+    margin-right: 30px;
+    padding: 30px;
+    margin-left: 0;
+    font-size: 1.3rem;
+}
+#book_form input{
+    padding: 8px;
+    margin-top: 2px;
+}
+
+button#submit{
+    padding: 10px 20px ;
+    margin-left:2rem;
+    background-color: aliceblue;
+    
+    border: purple solid 2px;
+    border-radius: 2px;
+   
+}
+button#submit >a{
+    text-decoration: none;
+    color:purple;
+    font-size: 1rem;
+    
+}
+button#submit >a:hover{
+    color:yellowgreen
+}
+
+input#title,input#isbn{
+    margin-left: 1.7em;
+}
+
+th{
+    font-size: 1.5rem;
+}
+
+#footer{
+    max-width:100%;
+    height: 5vh;
+    background-color: rgb(205, 150, 211);
+    color:white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 1500px) {
+   
+    form#book_form{
+        width:65vh;
+    }
+    .aside_2{
+        width:35vw
+    }
+    input#auhtor {
+        margin-left: 2rem;
+    }
+  }
