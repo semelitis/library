@@ -17240,18 +17240,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 //library function 
 function Library(){
-    return ;
+
 }
 const book_list=document.getElementById('book_list');
 
 //for rendering the book
 Library.prototype.addBookToList=function(book){
-    
     let row=document.createElement('tr');
-    
     console.log(row);
     //
-    row.innerHTML=`<td>${book.tite}</td>
+    row.innerHTML=`<td>${book.title}</td>
                    <td>${book.auhtor}</td>
                    <td>${book.isbn}</td>
                    <td>${book.read}</td>
